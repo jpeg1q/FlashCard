@@ -15,16 +15,19 @@ public class Deck {
 
         for (String t: terms){
             System.out.println("Term: "+ t);
-            System.out.print("Your answer: ");
+            System.out.print("Press Enter to see the answer...");
+        sc.nextLine();
+            
+            System.out.println("Answer: " + map.get(t));
+        System.out.print("Did you get it right? (y/n): ");
 
-            String userAns = sc.nextLine();
-            String correct =  map.get(t);
-
-            if (userAns.equalsIgnoreCase(correct)){
-                System.out.print("Correct\n");
-            } else {
-                System.out.println("wrong. answer: "+ correct+"\n");
-            }
+        String result = sc.nextLine().trim().toLowerCase();
+        if (result.equals("y")) {
+            System.out.println("✅ Nice!\n");
+        } else {
+            System.out.println("❌ Keep practicing.\n");
+        }
         }
     }
 }
+
