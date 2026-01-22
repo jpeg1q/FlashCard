@@ -23,11 +23,12 @@ public class Deck {
 
         String result = sc.nextLine().trim().toLowerCase();
         if (result.equals("y")) {
-            System.out.println("✅ Nice!\n");
+            System.out.println("Nice!\n");
         } else {
-            System.out.println("❌ Keep practicing.\n");
+            System.out.println("Keep practicing.\n");
         }
         }
     }
 }
+
 
